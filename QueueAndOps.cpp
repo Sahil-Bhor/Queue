@@ -33,7 +33,7 @@ public:
 
     void pop()
     {
-        if (rear == (front))
+        if (rear == front && rear != 0)
         {
             cout << "\nQueue is Empty, can't pop.";
             return;
@@ -43,7 +43,7 @@ public:
 
     int frnt()
     {
-        if (rear == (front - 1))
+        if (rear == front && rear != 0)
         {
             cout << "\nQueue is Empty -> ";
             return -1;
@@ -62,7 +62,7 @@ public:
     {
         int count = front;
 
-        if (rear == front - 1)
+        if (rear == front && rear != 0)
         {
             cout << "\nQueue: Empty !";
             return;
